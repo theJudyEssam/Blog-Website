@@ -1,0 +1,30 @@
+.about-container{
+    background-color:#EEEDEB;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .image-container{
+    padding: 6rem;
+  }
+  .image-container img{
+    border-radius: 10rem;
+    width: 200px;
+  }
+
+  .info-container{
+    border-radius: 5rem;
+    background-color: #EEEDEB;
+    padding: 10px
+  }
+  .info-container h3{
+    font-size: 35px;
+    padding-bottom: 2rem;
+    font-style: italic;
+  }
+
+  .info-container p{
+    font-size: 17px;
+    width: 700px;
+  }

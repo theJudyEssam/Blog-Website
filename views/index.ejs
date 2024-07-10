@@ -1,0 +1,58 @@
+<%- include("partials/header.ejs") %>
+
+<div class="title">
+    <div class="title-box">
+        <h1><span style="font-family: 'Lora', serif;">THURSDAY </span>THOUGHTS</h1>
+        <p>Hellow there, I'm Lojan, a 17-year-old on a journey through life! Join me as i navigate and reflect upon my journey.</p>
+    </div>
+</div>
+
+
+<div class="blog-header">
+    <div class="text-container">
+        <h1>Blogs</h1>
+    </div>
+    <form method="post" action="/new">
+        <button>Add</button>
+    </form>
+    
+</div>
+
+<div  id="card-container" class="blogs-container">
+ <form>
+    <div class="card">
+        <h3 class="card__title">Title
+        </h3>
+        <p class="card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <div class="card__date">
+            April 15, 2022
+        </div>
+        <div class="card__arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+            </svg>
+        </div>
+    </div>
+   </form>
+   
+</div>
+
+
+<div class="about-container">
+    <div class="image-container">
+        <img  src="/display/person-gray-photo-placeholder-woman-t-shirt-white-background-131683043.webp">
+    </div>
+    <div class="info-container">
+        <h3>About the writer behind the pen...</h3>
+        <p>Hello and welcome, my name is Lojan Farouk and here is where the kingdom of Thursday's Thoughts recides
+            I write about life, love, and everything that comes in-between. 
+            Want to know more about me? I am a freshman in Computer Engineering. Sounds crazy, right?
+            My passion recides in the fabric of life and everything that occurs in it. 
+            Philosphy and Humanity dance an eternal tango of feelings and experiences, and I love to uncover the 
+            steps of their perfect harmony. So, come along and join me in this amazing journey!
+        </p>
+    </div>
+</div>
+
+
+<%- include("partials/footer.ejs") %>

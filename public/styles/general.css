@@ -1,0 +1,18 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+    /* box-sizing: border-box; */
+    /* background-color: #E0A75E; */
+}
+
+body{
+    background-color: #EEEDEB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+

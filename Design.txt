@@ -1,0 +1,47 @@
+--text: #0d0f1b;
+--background: #fafafd;
+--primary: #575eae;
+--secondary: #c6a8d5;
+--accent: #bb7fc1;
+
+
+
+
+outline
+
+--ejs placeholders where the titles and the details are
+--when add is clicked, opens the add-new page   
+    -- when user is done with writing and clicks submit:
+    1. the title and the blog is saved in two variables 
+    2. these variables are stored _somewhere_ [[in a javascript object or sm shi]]
+    3. store the data in a file, as in make a file for each blog, and the first name of title will be the name of the blog?
+    4. 
+
+
+-- when the user returns back to the home-page
+    1. shows the blogs that have been added, 
+        make a function that creates a "blog card" with the given info
+        ,run a loop that creates cards based on the info given and all that
+        if the blog card is pressed, send over the name of the title, then search for the info with same 
+        title name, and load the /blog page with the given info
+
+-- in blog page, when user enters "edit"
+    1. open the /edit page, 
+    show two input boxes with the info that is alr written
+    the user shall edit what they want to edit
+    when they press submit, everything will be added again.
+
+-- when the user enters "delete"
+    1. the card will be deleted from the homepage
+    2. info will be deleted from the storage-unit
+    3. pop-up will appear
+
+
+
+
+what to do after:
+    1. fix the styling of the other pages
+    2. add fonts and colors
+    3. organize css pages
+
+    

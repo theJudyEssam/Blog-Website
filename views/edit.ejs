@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") %>
+
+<form method = 'post' action="/edit">
+    <input type="text" readonly name="title" value="<%= title %>" >
+    <input name="blog"  value="<%= blog %>">
+    <button type="submit">submit</button>
+</form>
+
+
+
+
+
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,28 @@
+
+.title{
+    box-sizing: border-box;
+    display: block;
+    padding: 3rem;
+}
+
+.title-box{
+    color:#2F3645;
+    margin: auto;
+  
+    background-color: #EEEDEB;
+    text-align: center;
+    padding: 50px;
+    width: 41%;
+}
+
+.title-box h1{
+    letter-spacing: -4px;
+    padding-bottom: 20px;
+    font-size:  5rem;
+    line-height: 60px;
+}
+.title-box p{
+    padding: 10px;
+    text-align: center;
+    color: #9f7968;
+}
