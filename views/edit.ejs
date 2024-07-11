@@ -1,9 +1,10 @@
 <%- include("partials/header.ejs") %>
 
-<form method = 'post' action="/edit">
-    <input type="text" readonly name="title" value="<%= title %>" >
-    <input name="blog"  value="<%= blog %>">
-    <button type="submit">submit</button>
+<form class="form" method = 'post' action="/edit/<%= title %>">
+    <input class="title-input" type="text" name="title" value="<%= title %>" >
+    <!-- <input name="blog"  value="<%= blog %>"> -->
+    <textarea  class="blog-input" name="blog" cols="40" rows="5"><%= blog %></textarea>
+    <button class="new-btn" type="submit">submit</button>
 </form>
 
 

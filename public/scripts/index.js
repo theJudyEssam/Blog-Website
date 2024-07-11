@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function(){
     .then(data => {
         data.forEach(blog => {
             // createCard(blog.title);
+            createAndAppendCard(blog.title, blog.preview, blog.time)
+            
         });
     })
     .catch(error => {
@@ -50,3 +52,66 @@ function createCard(title) {
     form.appendChild(card)
     cardContainer.appendChild(form);
 }
+
+
+function createAndAppendCard(blogTitle, preview, time) {
+    // Create elements
+    const form = document.createElement('form');
+    const card = document.createElement('div');
+    const title = document.createElement('h3');
+    const content = document.createElement('p');
+    const date = document.createElement('div');
+    const arrow = document.createElement('div');
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    const button = document.createElement("button")
+    // Set classes and attributes
+    card.className = 'card';
+    title.className = 'card__title';
+    content.className = 'card__content';
+    date.className = 'card__date';
+    arrow.className = 'card__arrow';
+    button.className = 'invisible-btn'
+    form.method = 'get'
+    form.action = `/blog/${blogTitle}`
+    button.type = `submit`
+
+    // Set text content
+    title.textContent = blogTitle;
+    content.textContent = preview;
+    date.textContent = time;
+
+    // Set SVG attributes
+    svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+    svg.setAttribute('fill', 'none');
+    svg.setAttribute('viewBox', '0 0 24 24');
+    svg.setAttribute('height', '15');
+    svg.setAttribute('width', '15');
+    path.setAttribute('fill', '#fff');
+    path.setAttribute('d', 'M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z');
+
+    // Assemble SVG
+    svg.appendChild(path);
+    arrow.appendChild(svg);
+
+    // Assemble card
+    card.appendChild(title);
+    card.appendChild(content);
+    card.appendChild(date);
+    card.appendChild(arrow);
+    form.appendChild(button)
+
+    // Assemble form
+    form.appendChild(card);
+
+    // Append form to card-container
+    const cardContainer = document.getElementById('card-container');
+    cardContainer.appendChild(form);
+}
+const edit = document.getElementById("edit-form")
+
+edit.addEventListener("submit", function(event){
+    // event.preventDefault();
+    const title = document.createElement('h3').value;   
+    window.location.href = `/edit/${title}`;
+})

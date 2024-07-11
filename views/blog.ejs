@@ -1,27 +1,35 @@
 <%- include("partials/header.ejs") %>
 
-<div class="blog-title">
-    <h1>
-       <%=btitle %>
-    </h1>
+
+<div class="blog-wrapper">
+    <div class="blog-title">
+        <h1 class="b-title">
+           <%=btitle %>
+        </h1>
+        <h2 class="author">Thursday Thoughts by Lojan Essam</h2>
+    </div>
+    
+    
+    <div class="blog-material">
+        <p class="blog">
+            <%= bblog %>
+        </p>
+    </div>
+    
+
+    <div class="buttons">
+
+    <form id="edit-form">
+      <button><a href="/edit/<%= btitle %>">Edit</a></button> 
+    </form>
+    <form id="delete-form" action="/blog/<%= btitle %>" method="post">
+        <input type="hidden" name="_method" value="DELETE">
+        <button type="submit">Delete</button>
+    </form>
+     </div>
+    
+    
 </div>
-
-
-<div class="blog-material">
-    <p>
-        <%= bblog %>
-    </p>
-</div>
-
-<form id="edit-form" method = 'get' action ='/edit'>
-    <button type="submit">Edit</button>
-</form>
-<form id="delete-form" action="/blog/<%= btitle %>" method="post">
-    <input type="hidden" name="_method" value="DELETE">
-    <button type="submit">Delete</button>
-</form>
-
-
 
 
 

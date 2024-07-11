@@ -37,12 +37,12 @@
 
 
 .blogs-container{
-    background-color: #EEEDEB;
-    padding: 3rem;
-    display: inline-grid;
-    grid-template-columns: auto auto auto auto ;
-    row-gap: 5.7rem;
-    column-gap: 6.5rem;
+  background-color: #EEEDEB;
+  padding: 2rem;
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 6.7rem;
+  column-gap: 4.5rem;
     /* position: relative;
     left: 7px; */
 }

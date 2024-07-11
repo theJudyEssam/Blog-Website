@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 75px;
+    padding-right: 140px;
     padding-bottom: 2.5rem;  
 }
 
@@ -18,7 +18,36 @@ input{
     font-size: 32px;
 
 }
+.preview{
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 7rem;
+    background-color: #EEEDEB;
+    /* border: 0.5px solid #939185; */
+    padding: 5px;
+}
 
 .blog-input{
+    text-align: center;
+    font-size: 20px;
     padding-bottom: 7rem;
+    background-color:#EEEDEB;
+    border: 0.5px solid #939185;
+    padding: 15px;
+    margin: 2rem;
+}
+
+.new-btn{
+    font-weight: 500;
+    background-color: #EEEDEB;
+    padding: 1rem;
+    margin: auto;
+    border: 2px solid #939185;
+}
+
+.new-btn:hover{
+    border: 2px solid #E6B9A6;
+    background-color: #E6B9A6;
+    color: #EEEDEB;
 }

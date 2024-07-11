@@ -1,0 +1,45 @@
+.blog-wrapper{
+    padding-bottom: 2.5rem; 
+    padding: 2rem;
+}
+
+.b-title{
+    text-align: center;
+    font-size: 57px;
+    font-weight: 900;
+    padding-bottom: 10px;
+   
+}
+.author{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    color: #E6B9A6;;
+}
+
+.blog-material{
+    padding: 3rem;
+}
+
+.blog{
+    font-size: 15px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button{
+    margin: 1rem;
+    font-weight: 500;
+    background-color: #EEEDEB;
+    padding: 1rem;
+    border: 2px solid #939185;
+}
+
+.buttons button:hover{
+    border: 2px solid #E6B9A6;
+    background-color: #E6B9A6;
+    color: #EEEDEB;
+}
+
