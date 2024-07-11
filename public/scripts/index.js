@@ -92,14 +92,15 @@ function createAndAppendCard(blogTitle, preview, time) {
 
     // Assemble SVG
     svg.appendChild(path);
-    arrow.appendChild(svg);
+    button.appendChild(svg)
+    arrow.appendChild(button);
 
     // Assemble card
     card.appendChild(title);
     card.appendChild(content);
     card.appendChild(date);
     card.appendChild(arrow);
-    form.appendChild(button)
+    // form.appendChild(button)
 
     // Assemble form
     form.appendChild(card);
