@@ -116,3 +116,24 @@ edit.addEventListener("submit", function(event){
     const title = document.createElement('h3').value;   
     window.location.href = `/edit/${title}`;
 })
+
+
+// const blog_a = document.getElementById("blog_anchor")
+// blog_a.addEventListener("click", function(){
+//     if(window.location.href != "/"){
+//         window.location.href = "/";
+//         blog_a.href = "/"
+
+//     }
+// })
+
+
+
+// window.onload = function() {
+//     if (window.location.hash) {
+//         const element = document.querySelector(window.location.hash);
+//         if (element) {
+//             element.scrollIntoView();
+//         }
+//     }
+// }
