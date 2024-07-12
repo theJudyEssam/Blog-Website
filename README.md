@@ -13,7 +13,7 @@
 
 
   ## Introduction
-      A simple blog author-side webapp that uses Express.js, and allows the user to add, edit, and delete their blogs.
+     A simple blog author-side webapp that uses Express.js, and allows the user to add, edit, and delete their blogs.
 
 
 ![image](https://github.com/user-attachments/assets/9282c3e6-945b-493b-b5b6-2ccf578efd4a)
@@ -27,7 +27,7 @@
 
 
 ## Installation
-    To get started with the project, follow these steps:
+   To get started with the project, follow these steps:
 
 
  
@@ -36,13 +36,13 @@
    git clone https://github.com/theJudyEssam/Blog-Website
 
 2. **Navigate to the directory**
-   cd blog-website
+   ```cd blog-website```
 
-3. **Install all the dependencies**
-   npm install
+4. **Install all the dependencies**
+     ```npm install```
   
 5. **Start the server**
-   nodemon server.js
+  ``` nodemon server.js```
 
 
 ## Contributing
